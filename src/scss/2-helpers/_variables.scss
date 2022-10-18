@@ -4,7 +4,7 @@
 $wj-install-name : "bare";
 $wj-template-name : "bootstrap-bare";
 $wj-assets : "/templates/#{$wj-install-name}/#{$wj-template-name}/dist/";
-$wj-images : "#{$wj-assets}assets/";
+$wj-images : "#{$wj-assets}assets/images/";
 $wj-fonts : "#{$wj-assets}assets/fonts/";
 
 //BREAKPOINT

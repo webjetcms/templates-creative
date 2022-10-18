@@ -5,6 +5,7 @@ const upath = require('upath');
 const sh = require('shelljs');
 const UglifyJS = require('uglify-js');
 const browserify = require('browserify');
+const exorcist = require('exorcist');
 
 module.exports = function renderScripts() {
 
@@ -15,13 +16,15 @@ module.exports = function renderScripts() {
 
     const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/ninja.js');
     const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/ninja.js');
+    const mapfile    = destPathScriptsJS + ".map";
 
     let bundler = browserify({
         plugin: [
           [ require('esmify'), {
             nodeModules: true
            } ]
-        ]
+        ],
+        debug: true
       });
     bundler.add(sourcePathScriptsJS);
 
@@ -31,6 +34,8 @@ module.exports = function renderScripts() {
         mangle: { toplevel: true }
     });*/
 
-    bundler.bundle().pipe(fs.createWriteStream(destPathScriptsJS));
+    bundler.bundle()
+      .pipe(exorcist(mapfile))
+      .pipe(fs.createWriteStream(destPathScriptsJS));
 
 };
