@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-//HELPERS
-@import "2-helpers/utils";
-@import "2-helpers/variables";
-@import "2-helpers/functions";
-@import "2-helpers/mixins";
-@import "2-helpers/placeholders";
-
 //BLIND FRIENDLY CODE
 body {
     max-width: 1200px;

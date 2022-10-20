@@ -1,0 +1,27 @@
+.container.px-4.px-lg-5
+    .row(style="width:100%")
+        div.col.pb-col-auto.d-flex.justify-content-start
+            p
+                a.navbar-brand(href='/')
+                    img.fixedSize-200-40-2(src='/templates/creative/bootstrap-creative/dist/assets/iway-logo.svg' height="40")
+                button.navbar-toggler.navbar-toggler-right(aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation' data-bs-target='#navbarResponsive' data-bs-toggle='collapse' type='button')
+                    span.navbar-toggler-icon
+
+        div.col.pb-col-auto.d-flex.justify-content-center
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav.ms-auto.my-2.my-lg-0
+                    li.nav-item
+                        a.nav-link(href='#about') About
+                    li.nav-item
+                        a.nav-link(href='#services') Services
+                    li.nav-item
+                        a.nav-link(href='#portfolio') Portfolio
+                    li.nav-item
+                        a.nav-link(href='#contact') Contact
+
+        div.col.pb-col-auto.d-flex.justify-content-end
+            ul.navbar-nav.other-languages(data-iwcm-write="!INCLUDE(/components/structuremirroring/language_switcher.jsp)!")
+                li.nav-item
+                    a.nav-link(href="/sk/") SK
+                li.nav-item
+                    a.nav-link(href="/en/") EN

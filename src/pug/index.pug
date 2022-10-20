@@ -1,31 +1,28 @@
 doctype html
-html(class="pg-homepage" lang="sk-SK" data-th-lang="${ninja.temp.lngIso}" data-th-data-browser-name="${ninja.userAgent.browserName}" data-th-data-browser-version="${ninja.userAgent.browserVersion}" data-th-data-device-type="${ninja.userAgent.deviceType}" data-th-data-device-os="${ninja.userAgent.deviceOS}")
+html(class="pg-homepage" data-th-lang="${ninja.temp.lngIso}" data-th-data-browser-name="${ninja.userAgent.browserName}" data-th-data-browser-version="${ninja.userAgent.browserVersion}" data-th-data-device-type="${ninja.userAgent.deviceType}" data-th-data-device-os="${ninja.userAgent.deviceOS}")
+
     head
         include includes/head.pug
-        include mixins
-    body
 
-        div(class="ly-page-wrapper")
-            //header
-            header.ly-header(data-iwcm-write="doc_header")
-                <!-- header - toto je len ukazka pre npm run start, vo WebJETe sa nahradi za obsah hlavicky -->
-                include pagebuilder/section/header/menu.pug
+    body#page-top
+        //header
+        div(data-iwcm-write="doc_header")
+            include pagebuilder/section/header/menu
 
-            //main content
-            main.ly-content-wrapper(data-iwcm-write="doc_data")
-                <!-- content - toto je len ukazka pre npm run start, vo WebJETe sa nahradi za obsah stranky -->
+        //content
+        div(data-iwcm-write="doc_data")
+            include pagebuilder/section/masthead/masthead
+            include pagebuilder/section/about/about
+            include pagebuilder/section/services/service
+            include pagebuilder/section/portfolio/portfolio
+            include pagebuilder/section/portfolio/cta
+            include pagebuilder/section/form/form
+            include pagebuilder/section/accordion/accordion
+            include pagebuilder/section/cards/cards
+            include pagebuilder/section/slider/hp-slider-section
+            include pagebuilder/section/tabs/tabs
+            include pagebuilder/section/form/form-with-text
 
-                include pagebuilder/section/slider/hp-slider-section
-
-                include pagebuilder/section/tabs/tabs
-
-                include pagebuilder/section/accordion/accordion
-
-                include pagebuilder/section/form/form-with-text
-
-                include pagebuilder/section/cards/cards
-
-            //footer
-            footer.flex-shrink-0.ly-footer(data-iwcm-write="doc_footer")
-                <!-- footer - toto je len ukazka pre npm run start, vo WebJETe sa nahradi za obsah paticky -->
-                include pagebuilder/section/footer/footer
+        //footer
+        div(data-iwcm-write="doc_footer")
+            include pagebuilder/section/footer/footer

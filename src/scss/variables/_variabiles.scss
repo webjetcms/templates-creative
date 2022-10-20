@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+//WJ DIR
+$wj-install-name : "creative";
+$wj-template-name : "bootstrap-creative";
+$wj-assets : "/templates/#{$wj-install-name}/#{$wj-template-name}/dist/";
+$wj-images : "#{$wj-assets}assets/images/";
+$wj-fonts : "#{$wj-assets}assets/fonts/";
+//$fa-font-path: "#{$wj-assets}assets/fonts/fontawesome";
+
+//BREAKPOINT
+$bp-dinosaur : 576px;
+$bp-mobile : 768px;
+$bp-tablet : 992px;
+$bp-laptop : 1200px;
+$bp-desktop : 1600px;

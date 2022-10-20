@@ -7,12 +7,11 @@ module.exports = function renderAssets() {
     const sourcePath = upath.resolve(upath.dirname(__filename), '../src/assets');
     const destPath = upath.resolve(upath.dirname(__filename), '../dist/.');
 
-    //ak pouzivate FontAwesome, odkomentujte
-    //const sourcePathFonts = upath.resolve(upath.dirname(__filename), '../node_modules/@fortawesome/fontawesome-free/webfonts');
-    //const destPathFonts = upath.resolve(upath.dirname(__filename), '../dist/webfonts/.');
+    const sourcePathFonts = upath.resolve(upath.dirname(__filename), '../node_modules/@fortawesome/fontawesome-free/webfonts');
+    const destPathFonts = upath.resolve(upath.dirname(__filename), '../dist/webfonts/.');
 
     sh.cp('-R', sourcePath, destPath);
-    //sh.cp('-R', sourcePathFonts, destPathFonts);
+    sh.cp('-R', sourcePathFonts, destPathFonts);
 
     //skopiruj screenshoty pre pagebuilder
     //console.log("path=", upath.dirname(__filename)+"/../src/pug/pagebuilder/");

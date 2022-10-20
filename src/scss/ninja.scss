@@ -1,64 +1,38 @@
+//
+// Styles
+//
+
+// Import custom variables and override default Bootstrap variables
+@import "variables";
+@import "./variables/variabiles.scss";
+
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
-//HELPERS
-@import "2-helpers/variables";
-@import "2-helpers/functions";
-@import "2-helpers/mixins";
-@import "2-helpers/placeholders";
 
-//BASE
-@import "3-base/font-face";
-@import "3-base/body";
-@import "3-base/selection";
-@import "3-base/grid";
-@import "3-base/typography";
-@import "3-base/multimedia";
-@import "3-base/form";
-@import "3-base/link";
-@import "3-base/list";
-@import "3-base/table";
-@import "3-base/address";
-@import "3-base/blockquote";
-@import "3-base/code";
+// Tools
+$fa-font-path: "/templates/creative/bootstrap-creative/dist/webfonts";
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
 
-//LAYOUT
-@import "4-layout/ly-page-wrapper";
-@import "4-layout/ly-header";
-@import "4-layout/ly-content-wrapper";
-@import "4-layout/ly-content";
-@import "4-layout/ly-article";
-@import "4-layout/ly-sidebar";
-@import "4-layout/ly-footer";
 
-//MODULES
-@import "5-modules/md-breadcrumb";
-@import "5-modules/md-navigation";
-@import "5-modules/md-browser-support";
-@import "5-modules/md-debug-info";
-@import "5-modules/md-checkform";
-@import "5-modules/md-search";
-@import "5-modules/md-sitemap";
-@import "5-modules/md-accordion";
-@import "5-modules/md-tabs";
+// Import custom styles
+@import "global";
 
-//PAGES
-@import "6-pages/pg-homepage";
-@import "6-pages/pg-subpage";
 
-//THEMES
-//@import "7-themes/";
+// Components
+@import "./components/buttons.scss";
+@import "./components/dividers.scss";
+@import "./components/navbar.scss";
+@import "./components/icons.scss";
+@import "./components/form.scss";
 
-//VIEWS
-@import "8-views/no-js";
-@import "8-views/no-cookies";
-@import "8-views/no-touchevents";
-@import "8-views/no-pointerevents";
-@import "8-views/browser-type";
-@import "8-views/device-type";
-@import "8-views/high-contrast";
-@import "8-views/print";
-@import "8-views/webjet-editor";
-@import "8-views/webjet-mail";
+// Sections
+@import "./sections/sections.scss";
+@import "./sections/masthead.scss";
+@import "./sections/portfolio.scss";
+@import "./sections/services.scss";
 
-// HOTFIX
-@import "hotfix";
+// Views
+@import "./views/ninja-page-builder.scss";

@@ -1,0 +1,8 @@
+.primary-bg {
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
+    --bs-bg-opacity: 1;
+}
+.dark-bg {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+}

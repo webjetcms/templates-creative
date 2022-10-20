@@ -4,6 +4,28 @@
 .baretest2 {
     background-color: yellow;
 }
+.text-white-75 {
+    /*bootstrap default*/
+}
+.text-muted {
+    /*bootstrap default*/
+}
+
+.hr-break {
+    background-color: #f4623a;
+    height: 0.2rem;
+    margin: 1.5rem auto;
+    max-width: 3.25rem;
+    opacity: 1;
+}
+
+.hr-break-light {
+    background-color: #FFF;
+    height: 0.2rem;
+    margin: 1.5rem auto;
+    max-width: 3.25rem;
+    opacity: 1;
+}
 
 a {
     &.btn.btn-primary {

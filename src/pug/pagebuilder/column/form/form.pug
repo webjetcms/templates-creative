@@ -1,20 +1,60 @@
 .col-md-6
     .column-content
-        div(data-iwcm-write="!INCLUDE(/components/formsimple/form.jsp, formName=&quot;Bare - example&quot;, editorData=JTVCJTdCJTIyZmllbGRUeXBlJTIyOiUyMm1lbm8lMjIsJTIybGFiZWwlMjI6JTIyJTIyLCUyMnBsYWNlaG9sZGVyJTIyOiUyMiUyMiwlMjJyZXF1aXJlZCUyMjp0cnVlLCUyMnRvb2x0aXAlMjI6JTIyJTIyJTdELCU3QiUyMmZpZWxkVHlwZSUyMjolMjJlbWFpbCUyMiwlMjJsYWJlbCUyMjolMjJFbWFpbCUyMiwlMjJwbGFjZWhvbGRlciUyMjolMjIlMjIsJTIycmVxdWlyZWQlMjI6dHJ1ZSwlMjJ0b29sdGlwJTIyOiUyMiUyMiU3RCwlN0IlMjJmaWVsZFR5cGUlMjI6JTIydGVsZWZvbiUyMiwlMjJsYWJlbCUyMjolMjIlMjIsJTIycGxhY2Vob2xkZXIlMjI6JTIyJTIyLCUyMnJlcXVpcmVkJTIyOmZhbHNlLCUyMnRvb2x0aXAlMjI6JTIyJTIyJTdELCU3QiUyMmZpZWxkVHlwZSUyMjolMjJwb3puYW1rYSUyMiwlMjJsYWJlbCUyMjolMjJTcHIlQzMlQTF2YSUyMiwlMjJwbGFjZWhvbGRlciUyMjolMjIlMjIsJTIycmVxdWlyZWQlMjI6ZmFsc2UsJTIydG9vbHRpcCUyMjolMjIlMjIlN0QsJTdCJTIyZmllbGRUeXBlJTIyOiUyMm9kb3NsYXQlMjIsJTIybGFiZWwlMjI6JTIyJTIyLCUyMnBsYWNlaG9sZGVyJTIyOiUyMiUyMiwlMjJyZXF1aXJlZCUyMjpmYWxzZSwlMjJ0b29sdGlwJTIyOiUyMiUyMiU3RCU1RA==)!")
+        div(data-iwcm-write="!INCLUDE(/components/formsimple/form.jsp, formName=&quot;Creative test&quot;, rowView=&quot;false&quot;, editorData=JTVCJTdCJTIyZmllbGRUeXBlJTIyOiUyMm1lbm8lMjIsJTIybGFiZWwlMjI6JTIyTWVubyUyMiwlMjJ2YWx1ZSUyMjolMjIlMjIsJTIycGxhY2Vob2xkZXIlMjI6JTIyJTIyLCUyMnJlcXVpcmVkJTIyOmZhbHNlLCUyMnRvb2x0aXAlMjI6JTIyJTIyJTdELCU3QiUyMmZpZWxkVHlwZSUyMjolMjJlbWFpbCUyMiwlMjJsYWJlbCUyMjolMjJFbWFpbCUyMiwlMjJ2YWx1ZSUyMjolMjIlMjIsJTIycGxhY2Vob2xkZXIlMjI6JTIyJTIyLCUyMnJlcXVpcmVkJTIyOmZhbHNlLCUyMnRvb2x0aXAlMjI6JTIyJTIyJTdELCU3QiUyMmZpZWxkVHlwZSUyMjolMjJ0ZWxlZm9uJTIyLCUyMmxhYmVsJTIyOiUyMlRlbGVmJUMzJUIzbiUyMiwlMjJ2YWx1ZSUyMjolMjIlMjIsJTIycGxhY2Vob2xkZXIlMjI6JTIyJTIyLCUyMnJlcXVpcmVkJTIyOmZhbHNlLCUyMnRvb2x0aXAlMjI6JTIyJTIyJTdELCU3QiUyMmZpZWxkVHlwZSUyMjolMjJwb3puYW1rYSUyMiwlMjJsYWJlbCUyMjolMjJTcHIlQzMlQTF2YSUyMiwlMjJ2YWx1ZSUyMjolMjIlMjIsJTIycGxhY2Vob2xkZXIlMjI6JTIyJTIyLCUyMnJlcXVpcmVkJTIyOmZhbHNlLCUyMnRvb2x0aXAlMjI6JTIyJTIyJTdELCU3QiUyMmZpZWxkVHlwZSUyMjolMjJvZG9zbGF0JTIyLCUyMmxhYmVsJTIyOiUyMiUyMiwlMjJ2YWx1ZSUyMjolMjIlMjIsJTIycGxhY2Vob2xkZXIlMjI6JTIyJTIyLCUyMnJlcXVpcmVkJTIyOmZhbHNlLCUyMnRvb2x0aXAlMjI6JTIyJTIyJTdEJTVE)!")
             form#formMailForm-ampquotbare-exampleampquot(action='' method='post' name='formMailForm-ampquotbare-exampleampquot')
-                .form-group
-                    label.standardLabel(for='meno') Meno *
-                    input#meno.required.form-control.inputtext(data-name='Meno' name='meno' type='text' maxlength='20' placeholder='Meno *' title='povinné pole')
-                    .help-block.cs-error.cs-error-meno
+                .form-group.type-text
+                    label.standardLabel.invalidLabel(for='meno') Meno *
+                    input#meno.required.form-control.inputtext.invalid(data-name='Meno' name='meno' type='text' maxlength='20' title='povinné pole')
+                    .help-block.cs-error.cs-error-meno Toto je povinne pole
                 .form-group
                     label.standardLabel(for='telefon') Telefón
-                    input#telefon.phoneNumber.form-control.inputtext(data-name='Telefon' name='telefon' type='text' maxlength='14' placeholder='Telefon')
+                    input#telefon.phoneNumber.form-control.inputtext(data-name='Telefon' name='telefon' type='text' maxlength='14')
                     .help-block.cs-error.cs-error-telefon
                 .form-group
                     label.standardLabel(for='sprava') Správa
-                    textarea#sprava.form-control.inputtextarea(data-name='Sprava' name='sprava' placeholder='Sprava')
+                    textarea#sprava.form-control.inputtextarea(data-name='Sprava' name='sprava')
+                .form-group
+                    label Vyber si nieco
+                        i.popover-link.fa.fa-info-circle(data-html='true' title='Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada.' data-placement='top' data-toggle='tooltip' data-trigger='focus' role='button' tabindex='0')
+                    .form-check
+                        input#vyber-si-nieco-0.form-check-input.inputradio(data-name='Vyber si nieco' name='vyber-si-nieco' placeholder='' type='radio' value='Dnes')
+                        label.form-check-label(for='vyber-si-nieco-0') Dnes
+                    .form-check
+                        input#vyber-si-nieco-1.form-check-input.inputradio(data-name='Vyber si nieco' name='vyber-si-nieco' placeholder='' type='radio' value='Zajtra')
+                        label.form-check-label(for='vyber-si-nieco-1') Zajtra
+                    .form-check
+                        input#vyber-si-nieco-2.form-check-input.inputradio(data-name='Vyber si nieco' name='vyber-si-nieco' placeholder='' type='radio' value='Pozajtra')
+                        label.form-check-label(for='vyber-si-nieco-2') Pozajtra
+                    .help-block.cs-error.cs-error-vyber-si-nieco.cs-error-vyber-si-nieco-0.cs-error-vyber-si-nieco-1.cs-error-vyber-si-nieco-2
+                .form-group
+                    label Vyber si nieco
+                        i.popover-link.fa.fa-info-circle(data-html='true' title='Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada.' data-placement='top' data-toggle='tooltip' data-trigger='focus' role='button' tabindex='0')
+                    .form-check
+                        input#testovaci-0.form-check-input.inputcheckbox(data-name='testovaci' name='testovaci' placeholder='' type='checkbox' value='10')
+                        label.form-check-label(for='testovaci-0') 10
+                    .form-check
+                        input#testovaci-1.form-check-input.inputcheckbox(data-name='testovaci' name='testovaci' placeholder='' type='checkbox' value='20')
+                        label.form-check-label(for='testovaci-1') 20
+                    .form-check
+                        input#testovaci-2.form-check-input.inputcheckbox(data-name='testovaci' name='testovaci' placeholder='' type='checkbox' value='30')
+                        label.form-check-label(for='testovaci-2') 30
+                    .help-block.cs-error.cs-error-testovaci.cs-error-testovaci-0.cs-error-testovaci-1.cs-error-testovaci-2
+
+                .form-group
+                    label(for='toto-je-vyberovy-zoznam')
+                        | Toto je vyberovy zoznam&nbsp;*
+                        i.popover-link.fa.fa-info-circle(data-html='true' title='mame aj tooltip' data-placement='top' data-toggle='tooltip' data-trigger='focus' role='button' tabindex='0')
+                    select#toto-je-vyberovy-zoznam.form-select(name='toto-je-vyberovy-zoznam')
+                        option(value='jablko') jablko
+                        option(value='hruska') hruska
+                        option(value='slivka') slivka
+                    .help-block.cs-error.cs-error-toto-je-vyberovy-zoznam.cs-error-toto-je-vyberovy-zoznam-0.cs-error-toto-je-vyberovy-zoznam-1.cs-error-toto-je-vyberovy-zoznam-2
+
+
+
                 .form-group.sender
                     .row
                         .col-6.required-info * Označené polia sú povinné
                         .col-6.text-end
                             input.btn.btn-primary(onclick="return invokeWJAjax('formMailForm-ampquotbare-exampleampquot', 'ajaxFormResultContainer', 'bSubmit', '/FormMailAjax.action');" type='submit' value='Odoslat')
+            <script type='text/javascript'>try { $(document).ready(function() { $('i.popover-link').tooltip({trigger: 'hover'}); }); } catch (e) {console.log(e);}</script>

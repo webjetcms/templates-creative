@@ -1,7 +1,7 @@
 {
-    "title": "Bare",
-    "name": "startbootstrap-bare",
-    "version": "5.0.7",
+    "title": "Creative",
+    "name": "startbootstrap-creative",
+    "version": "7.0.6",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node node_scripts/build-assets.js",
@@ -12,18 +12,20 @@
         "start": "npm run build && node node_scripts/start.js",
         "start:debug": "npm run build && node node_scripts/start-debug.js"
     },
-    "description": "A basic HTML starter template for Bootstrap",
+    "description": "Creative is a stylish one page HTML theme built with Bootstrap.",
     "keywords": [
         "css",
         "sass",
+        "scss",
         "html",
+        "pug",
         "responsive",
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template/bare",
+    "homepage": "https://startbootstrap.com/theme/creative",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-bare/issues",
+        "url": "https://github.com/StartBootstrap/startbootstrap-creative/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -33,7 +35,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-bare.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-creative.git"
     },
     "dependencies": {
         "bootstrap": "5.2.2",
@@ -41,6 +43,7 @@
         "jquery.cookie": "^1.4.1"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.1.0-9",
         "autoprefixer": "10.4.12",
         "browser-sync": "2.27.10",
         "browserify": "^17.0.0",

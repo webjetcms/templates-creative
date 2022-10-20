@@ -1,0 +1,81 @@
+form {
+    &[name*="formMailForm"] {
+        .col {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .form-group {
+            margin-bottom: 1rem !important;
+            position: relative;
+        }
+        .form-group.type-text {
+            label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                padding: 1rem 0.75rem;
+                pointer-events: none;
+                border: 1px solid transparent;
+                transform-origin: 0 0;
+                transition: opacity 0.1s ease-in-out, transform 0.1s;
+                &.focused {
+                    opacity: 0.65;
+                    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+                }
+            }
+        }
+        .form-control {
+            padding: 1rem 0.75rem;
+            height: calc(3.5rem + 2px);
+            line-height: 1.25;
+            padding-top: 1.625rem;
+            padding-bottom: 0.625rem;
+            &:focus {
+                padding-top: 1.625rem;
+                padding-bottom: 0.625rem;
+            }
+        }
+        textarea.form-control {
+            height: 10rem;
+            line-height: inherit;
+        }
+        .btn.btn-primary {
+            display: block;
+            width: 100%;
+            padding: 1.25rem 2.25rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10rem;
+        }
+        .help-block.cs-error {
+            --bs-alert-color: #842029;
+            color: var(--bs-alert-color);
+            font-size: 14px;
+            margin-top: 6px;
+            padding-left: 4px;
+        }
+        input.invalid {
+            --bs-alert-color: #842029;
+            border-color: var(--bs-alert-color);
+        }
+        label.invalidLabel {
+            --bs-alert-color: #842029;
+            color: var(--bs-alert-color);
+        }
+    }
+    label {
+        margin-bottom: 15px;
+    }
+    .form-check {
+        &:last-child {
+            margin-bottom: 25px;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+    }
+}
