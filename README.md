@@ -1,10 +1,8 @@
 # Creative šablóna
 
-Základná ukážková šablóna pre WebJET CMS s využitím [Thymeleaf šablón](http://docs.webjetcms.sk/v2022/#/frontend/thymeleaf/README) napísaných vo formáte [PugJS](http://docs.webjetcms.sk/v2022/#/developer/frameworks/pugjs). Je založená na [Start Bootstrap - Creative](https://startbootstrap.com/theme/creative) - [github](https://github.com/StartBootstrap/startbootstrap-creative).
+Základná jednostránková (```singlepage```) ukážková šablóna pre WebJET CMS s využitím [Thymeleaf šablón](http://docs.webjetcms.sk/v2022/#/frontend/thymeleaf/README) napísaných vo formáte [PugJS](http://docs.webjetcms.sk/v2022/#/developer/frameworks/pugjs). Je založená na [Start Bootstrap - Creative](https://startbootstrap.com/theme/creative) - [github](https://github.com/StartBootstrap/startbootstrap-creative).
 
-Odporúčame ju použiť ako základ AKEJKOĽVEK novej šablóny pre WebJET CMS.
-
-Dokumentácia k [použitiu šablóny vo WebJET CMS](http://docs.webjetcms.sk/v2022/#/frontend/examples/template-bare/README).
+Dokumentácia k [použitiu šablóny vo WebJET CMS](http://docs.webjetcms.sk/v2022/#/frontend/examples/templates-creative/README).
 
 ## Copyright and License
 
