@@ -1,10 +1,5 @@
 form {
     &[name*="formMailForm"] {
-        .col {
-            width: 100%;
-            max-width: 100%;
-            flex: 0 0 100%;
-        }
         .form-group {
             margin-bottom: 1rem !important;
             position: relative;
