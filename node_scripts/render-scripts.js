@@ -28,14 +28,33 @@ module.exports = function renderScripts() {
       });
     bundler.add(sourcePathScriptsJS);
 
-    /*toto zatial nechceme robit, kod je mega skaredy a potom tazko debugovatelny
-    bundler.transform('uglifyify', {
-        global: true,
-        mangle: { toplevel: true }
-    });*/
 
     bundler.bundle()
       .pipe(exorcist(mapfile))
-      .pipe(fs.createWriteStream(destPathScriptsJS));
+      .pipe(fs.createWriteStream(destPathScriptsJS).on("finish", ()=>{
+        console.log("Done writing file, reading: ", destPathScriptsJS);
 
+        var minified = UglifyJS.minify(
+          fs.readFileSync(destPathScriptsJS, 'utf8'), {
+            mangle: {
+              toplevel: true,
+            },
+            sourceMap: {
+                filename: "ninja.js",
+                url: "minja.min.js.map"
+            }
+          }
+        );
+        //console.log("minified=", minified);
+        //console.log("min.js=", destPathScriptsJS.replace(".js", ".min.js"));
+
+        fs.writeFileSync(
+          destPathScriptsJS.replace(".js", ".min.js"),
+          minified.code
+        );
+        fs.writeFileSync(
+          destPathScriptsJS.replace(".js", ".min.js.map"),
+          minified.map
+        );
+      }));
 };
